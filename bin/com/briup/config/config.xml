@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<client class="com.briup.client.ClientImpl">
+		<ip>127.0.0.1</ip>
+		<port>11111</port>
+	</client>
+	<gather class="com.briup.client.GatherImpl">
+		<file>radwtmp</file>
+	</gather>
+	<server class="com.briup.server.ServerImpl">
+		<port>11111</port>
+	</server>
+	<dbStore class="com.briup.server.DBStoreImpl">
+		<batchSize>1000</batchSize>
+	</dbStore>
+	<logger class="com.briup.logger.LogImpl">
+		<log_prop>src/log4j.properties</log_prop>
+	</logger>
+</module>
